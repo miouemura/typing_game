@@ -12,7 +12,7 @@
   let loc;
   let score;
   let miss;
-  const timeLimit = 20 * 1000;
+  const timeLimit = 2 * 1000;
   let startTime;
   let isPlaying = false;
 
@@ -31,7 +31,8 @@
 
   function showResult() {
     const accuracy = score + miss === 0 ? 0 : score / (score + miss) * 100;
-    alert(`${score}文字正解, ${miss}文字間違え, ${accuracy.toFixed(2)}%の正答率です!`);
+    document.getElementById("body").classList.add("done");
+    //alert(`${score}文字正解, ${miss}文字間違え, ${accuracy.toFixed(2)}%の正答率です!`);
   }
 
   function updateTimer() {
@@ -44,8 +45,8 @@
       isPlaying = false;
       showResult();
       clearTimeout(timerId);
-      timerLabel.textContent = '0.00';
-      target.textContent = 'クリックしてもう一回？';
+      //timerLabel.textContent = '0.00';
+      //target.textContent = 'クリックしてもう一回？';
     }
   }
 

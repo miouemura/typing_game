@@ -22,3 +22,59 @@ body {
   color: #008000;
   font-size: 40px;
 }
+
+#result {
+  padding: 0;
+  font-size: 70px;
+  margin-top: -50px;
+}
+
+#result1,#result2,#result3{
+  font-size: 40px;
+}
+#result3{
+  margin-top: -170px;
+  margin-left:500px;
+  margin-bottom:170px;
+}
+#result4,#result5,#result6,#result7{
+  padding:10px;
+  border-radius: 10px;
+}
+#result4{
+  font-size: 40px;
+  position: fixed;
+  top:20px;
+  left: 10px;
+  background-color: #CC3399;
+}
+#result5{
+  font-size: 40px;
+  background-color: #FF69B4;
+  position: fixed;
+  bottom: 10px;
+  left:10px;
+}
+#result7{
+  font-size: 40px;
+  background-color: #0000CD;
+  position: fixed;
+  bottom: 10px;
+  left:140px;
+}
+#result6{
+  font-size: 40px;
+  background-color: #87CEFA;
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+}
+#result-wrapper{
+  display: none;
+}
+.done #result-wrapper{
+  display: block;
+}
+.done .game{
+  display: none;
+}

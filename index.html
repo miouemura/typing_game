@@ -5,7 +5,8 @@
   <title>Typing Game</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id='body'>
+  <div class="game">
   <p id="target">クリックしてスタート</p>
   <p class="info">
     正解した文字: <span id="score">0</span>
@@ -16,6 +17,17 @@
   <p class="info3">
     残り時間: <span id="timer">0.00</span>
   </p>
+  </div>
+  <div id='result-wrapper'>
+    <p id="result">結果表示</p>
+    <p id="result1">8問/10問</p>
+    <p id="result2">素晴らしい</p>
+    <p id="result3"><span style='font-size:25px;'>あなたの正答率： </span><br>80％</p>
+    <btn id="result4">再挑戦</btn>
+    <btn id="result5">復習</btn>
+    <btn id="result7">間違えた問題</btn>
+    <btn id="result6">戻る</btn>
+  </div>
   <script src="js/main.js"></script>
   <!-- <div class="stage"> -->
     <!-- <div id="cards">
