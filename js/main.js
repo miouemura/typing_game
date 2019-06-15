@@ -2,24 +2,30 @@
 
 {
   const words = [
-    'apple',
-    'sky',
-    'blue',
-    'middle',
-    'set',
+    'meta',
+    'title',
+    'body',
+    'head',
+    'html',
+    'html',
+
+
   ];
   let word;
   let loc;
   let score;
   let miss;
-  const timeLimit = 20 * 1000;
+  const timeLimit = 2 * 1000;
   let startTime;
   let isPlaying = false;
+
 
   const target = document.getElementById('target');
   const scoreLabel = document.getElementById('score');
   const missLabel = document.getElementById('miss');
   const timerLabel = document.getElementById('timer');
+
+
 
   function updateTarget() {
     let placeholder = '';
@@ -29,9 +35,11 @@
     target.textContent = placeholder + word.substring(loc);
   }
 
+
   function showResult() {
     const accuracy = score + miss === 0 ? 0 : score / (score + miss) * 100;
-    alert(`${score}文字正解, ${miss}文字間違え, ${accuracy.toFixed(2)}%の正答率です!`);
+    document.getElementById("body").classList.add("done");
+    //alert(`${score}文字正解, ${miss}文字間違え, ${accuracy.toFixed(2)}%の正答率です!`);
   }
 
   function updateTimer() {
@@ -44,16 +52,25 @@
       isPlaying = false;
       showResult();
       clearTimeout(timerId);
-      timerLabel.textContent = '0.00';
-      target.textContent = 'クリックしてもう一回？';
-    }
+     }
   }
 
-  window.addEventListener('click', () => {
+  btn.addEventListener('click', () => {
     if (isPlaying === true) {
       return;
     }
     isPlaying = true;
+
+    // console.log(btn);
+    // console.log(isPlaying);
+    btn.parentNode.removeChild(btn);
+    btn1.parentNode.removeChild(btn1);
+    btn2.parentNode.removeChild(btn2);
+
+    // var btn = element.parentNode.removeChild(element);
+    // <input type="btn" value="タイピング初級編を始める" onclick="btn.disabled = true;">
+
+
 
     loc = 0;
     score = 0;
@@ -62,13 +79,16 @@
     missLabel.textContent = miss;
     word = words[Math.floor(Math.random() * words.length)];
 
+    // var btn = element.parentNode.removeChild(element);
+
+
     updateTarget();
     startTime = Date.now();
     updateTimer();
 
   });
 
-  window.addEventListener('keyup', e => {
+  btn.addEventListener('keyup', e => {
     if (isPlaying !== true) {
       return;
     }
