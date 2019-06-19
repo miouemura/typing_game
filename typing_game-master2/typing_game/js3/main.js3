@@ -1,0 +1,16 @@
+function countstart() {
+count = eval(document.form_countdown.counter.value);
+timerID = setInterval('countdown()',1000);
+document.form_countdown.start.disabled = true; //開始ボタンを使用禁止
+}
+function countstop() {
+	clearInterval(timerID);
+	document.form_countdown.start.disabled = false; //開始ボタンを解除
+	document.form_countdown.reset(); //初期値に戻す
+}
+
+function countdown() {
+document.form_countdown.counter.value= count; //カウント表示
+count--; //カウントダウン
+if (count < 0) countstop(); //カウント終了
+}
