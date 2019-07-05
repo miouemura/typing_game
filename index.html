@@ -2,49 +2,132 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Typing Game</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <div class="topbox">
+    <p id="HTML">HTML</p>
+  <input id="Howtouse" click="Howtouse" value="HTMLとは？" onClick="window.open('')">
+  <input id="Howtouse2" click="Howtouse2" value="履歴" onClick="window.open('')"><br>
+  </div>
+
+  <input id="play" click="play" value="タイピング初級編を始める"  onClick="window.open('HTML.html')">
+  <input id="play2" click="play2" value="タイピング中級編を始める" onClick="window.open('HTML.html')">
+  <input id="play3" click="play3" value="タイピング上級編を始める" onClick="window.open('HTML.html')">
+  <input id="Howtouse3" click="Howtouse3" value="戻る" onClick="window.open('home.html')">
+
+  <p id="playscore">最高正答率:1</p><p id="playtime">2分間</p>
+  <p id="play2score">最高正答率:2</p><p id="play2time">3分間</p>
+  <p id="play3score">最高正答率:3</p><p id="play3time">5分間</p>
+
 </head>
-<body id='body'>
-  <!-- <div id="gostbtn">target</div> -->
-  <div class="game">
-  <btn id="target"></btn>
-  <p class="info">
-    <!-- 正解した文字:  -->
-    <span id="score"></span>
-  </p>
-  <p class="info2">
-    <!-- 間違えた文字: -->
-     <span id="miss"></span>
-  </p>
-  <p class="info3">
-    <!-- 残り時間:  -->
-    <span id="timer"></span>
-  </p>
-  </div>
+<body>
+<style>
 
-    <btn id="btn">タイピング初級編を始める</btn><br>
-   <btn id="btn1">タイピング中級編を始める</btn><br>
-  <btn id="btn2">タイピング上級編を始める</btn>
+body {
+  background: #F78181;
+}
+.topbox{
+  display: flex;
+  color: #000000;
+  justify-content: space-between;
+}
+.topbox btn{
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 0 10px;
+  line-height: 500px;
+  display: inline-block;
 
-  　<!-- <btn id="result8">中止</btn> -->
+}
+#HTML{
+  font-size: 70px;
+  margin: 0 0 0 40%;
 
-   <div id='result-wrapper'>
-    <p id="result">結果</p>
-    <p id="result1">8問/10問</p>
-    <p id="result2">素晴らしい</p>
-    <p id="result3"><span style='font-size:25px;'>あなたの正答率： </span><br>80％</p>
-    <btn id="result4">再挑戦</btn>
-    <btn id="result5">復習</btn>
-    <btn id="result7">間違えた問題</btn>
-    <btn id="result6">戻る</btn>
-  </div>
-  <script src="js/main.js"></script>
-  <!-- <div class="stage"> -->
-    <!-- <div id="cards">
-      <div class="card">check</div>
-      <div class="card">retry</div> -->
-    <!-- </div> -->
-  </div>
+  /* display: inline-block; */
+}
+
+#play,#play2,#play3 {
+  background: #FE9A2E;
+  width: 600px;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+#play {
+  margin: 7% 0 0 25%;
+  display:inline-block;
+
+}
+
+#play2 {
+  margin: 1.5% 0 0 25%;
+  display:inline-block;
+
+}
+#play3 {
+  margin: 1.5% 0 0 25%;
+  display:inline-block;
+}
+
+#Howtouse {
+  font-size: 40px;
+  background: #DC143C;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1% 0 0 -50%;
+  /* display:inline-block; */
+  width: 225px;
+}
+#Howtouse2 {
+  font-size: 40px;
+  background: #0174DF;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1% 0 0 0;
+  width: 100px;
+  /* display:inline-block; */
+  text-align: center;
+  /* display: flex; */
+
+}
+#Howtouse3 {
+  background: #0000CD;
+  margin: 3% 0 0 82%;
+  width: 120px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+#playscore {
+  font-size: 25px;
+  margin: -29% 0 0 0;
+}
+#play2score {
+  font-size: 25px;
+  margin: 5% 0 0 0;
+}
+#play3score {
+  font-size: 25px;
+  margin: 5% 0 0 0;
+}
+
+#playtime {
+  font-size: 35px;
+  margin: -3% 0 0 85%;
+}
+#play2time {
+  font-size: 35px;
+  margin: -3.5% 0 0 85%;
+}
+#play3time {
+  font-size: 35px;
+  margin: -3% 0 0 85%;
+}
+
+</style>
 </body>
 </html>
