@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,7 +20,7 @@ body {
   padding: 0 10px;
   line-height: 105px;
 }
-#HTML{
+#JavaScript{
   font-size: 70px;
   margin: 0 150px 0 0;
 }
@@ -98,8 +97,8 @@ body {
 }
 </style>
 <div class="topbox">
-  <btn id="Howtouse">HTMLとは？</btn>
-  <p id="HTML">HTML</p>
+  <btn id="Howtouse">JavaScriptとは？</btn>
+  <p id="JavaScript"></p>JavaScript</p>
   <btn id="Howtouse2">履歴</btn>
 </div>
 <btn id="play" onClick="window.open('HTML.html')">タイピング初級編を始める</btn>
