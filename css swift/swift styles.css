@@ -1,0 +1,113 @@
+body {
+  padding-top: 50px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  background: #F0E68C;
+}
+
+#target {
+  font-size: 50px;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+
+}
+
+.info {
+  color: #0000CD;
+  font-size: 40px;
+}
+.info2 {
+  color: #FF4500;
+  font-size: 40px;
+}
+.info3 {
+  color: #008000;
+  font-size: 40px;
+}
+
+#btn,#btn1,#btn2 {
+  background: #FFA500;
+  font-size: 50px;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+#btn {
+  width: 40%;
+  padding-bottom: -20px;
+  right: 30%;
+}
+#btn1 {
+  padding-bottom: -20px;
+
+}
+#btn2 {
+  padding-bottom: -20px;
+
+}
+
+#result8 {
+  font-size: 40px;
+  background-color: #FF4500;
+  padding:10px;
+  border-radius: 10px;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+#result {
+  padding: 0;
+  font-size: 70px;
+  margin-top: -50px;
+}
+
+#result1,#result2,#result3{
+  font-size: 40px;
+}
+#result3{
+  margin-top: -170px;
+  margin-left: 500px;
+  margin-bottom: 170px;
+}
+#result4,#result5,#result6,#result7{
+  padding:10px;
+  border-radius: 10px;
+}
+#result4{
+  font-size: 40px;
+  position: fixed;
+  top:20px;
+  left: 10px;
+  background-color: #CC3399;
+}
+#result5{
+  font-size: 40px;
+  background-color: #FF69B4;
+  position: fixed;
+  bottom: 10px;
+  left:10px;
+}
+#result7{
+  font-size: 40px;
+  background-color: #0000CD;
+  position: fixed;
+  bottom: 10px;
+  left:140px;
+}
+#result6{
+  font-size: 40px;
+  background-color: #87CEFA;
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+}
+#result-wrapper{
+  display: none;
+}
+.done #result-wrapper{
+  display: block;
+}
+.done .game{
+  display: none;
+}

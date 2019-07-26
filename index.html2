@@ -7,7 +7,7 @@
 <body>
 <style>
 body {
-  background: #F78181;
+  background: #FAAC58;
 }
 .topbox{
   display: flex;
@@ -25,7 +25,7 @@ body {
   margin: 0 150px 0 0;
 }
 #Howtouse {
-  background: #DC143C;
+  background: #FFA500;
   height: 100px;
 
 }
@@ -97,8 +97,8 @@ body {
 }
 </style>
 <div class="topbox">
-  <btn id="Howtouse">JavaScriptとは？</btn>
-  <p id="JavaScript"></p>JavaScript</p>
+  <btn id="Howtouse" onClick="window.open('Houtouse ja.html')">JavaScriptとは？</btn>
+  <p id="JavaScript">JavaScript</p>
   <btn id="Howtouse2">履歴</btn>
 </div>
 <btn id="play" onClick="window.open('javascript.html')">タイピング初級編を始める</btn>
